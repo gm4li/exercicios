@@ -1,24 +1,17 @@
 // Bernardo Fogaça olivieri
 import java.util.Scanner;
 
-public class exercicio5 
-{public static void main(String[] args) { 
+public class exercicio5 {
+    public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
+        System.out.println("digite sua primeira nota");
+        double nota1 = entrada.nextDouble();
+        System.out.println("digite sua segunda nota");
+        double nota2 = entrada.nextDouble();
 
-        System.out.println("digite o numero1");
-        int numero1 = entrada.nextInt();
-
-        System.out.println("digite o numero2");
-        int numero2 = entrada.nextInt();
-
-        System.out.println("digite o numero3");
-        int numero3 = entrada.nextInt();
-
-        System.out.println("digite o numero4");
-        int numero4 = entrada.nextInt();
-
-        int resultado = (numero1 + numero2 + numero3 + numero4);
-        System.out.println("Resultado:" + resultado);
-        entrada.close();}
+        double media = (nota1 + nota2) / 2;
+        System.out.println("sua media é:" + media);
+        entrada.close();
+    }
     
 }

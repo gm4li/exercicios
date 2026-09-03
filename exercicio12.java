@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class exercicio12 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        System.out.println("digite o ano que voce nasceu");
-        int anoNascimento = entrada.nextInt();
-        System.out.println("digite o ano atual");
-        int anoAtual = entrada.nextInt();
-        System.out.println("voce tem " + (anoAtual - anoNascimento) + " anos e tera " + (anoAtual - anoNascimento + (2030 - anoAtual) )+ " anos em 2030");
-
+        System.out.println("digite o numero");
+        int numero = entrada.nextInt();
+        System.out.println("o numero elevado ao quadrado é: " + (numero * numero));
+        System.out.println("o numero elevado ao cubo é: " + (numero * numero * numero));
+        System.out.println("a raiz quadrada do numero é: " + Math.sqrt(numero));
+        System.out.println("o numero elevado a 10 é: " + Math.pow(numero, 10));
+        entrada.close();
     }
-    
 }
